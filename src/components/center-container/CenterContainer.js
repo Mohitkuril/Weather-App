@@ -1,7 +1,7 @@
 import { CenterContainerBlock, HighLow, WeatherDesc, Temperature } from "./CenterContainer.styled";
 import ClipLoader from "react-spinners/ClipLoader";
 import React from "react";
-import NotFound from "../../assets/images/not-found.png";
+import NotFound from "../../assets/images/not-found.webp";
 
 const CenterContainer = ({ todayWeather, loading, noData }) => {
 

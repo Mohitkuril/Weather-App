@@ -1,7 +1,7 @@
 import { FooterBlock, DataSection, Image } from "./BottomContainer.styled";
-import FeelsLike from "../../assets/images/weatherobjects/feels.png";
-import Wind from "../../assets/images/weatherobjects/wind.png";
-import Humidity from "../../assets/images/weatherobjects/humidity.png";
+import FeelsLike from "../../assets/images/weatherobjects/feels.webp";
+import Wind from "../../assets/images/weatherobjects/wind.webp";
+import Humidity from "../../assets/images/weatherobjects/humidity.webp";
 import React from "react";
 
 const BottomContainer = ({ todayWeather, loading, noData }) => {

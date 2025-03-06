@@ -1,13 +1,13 @@
-import defaultWeatherImage from "../assets/images/weather/default.jpg";
-import cloudsImage from "../assets/images/weather/clouds.jpg";
-import drizzleImage from "../assets/images/weather/drizzle.jpg";
-import snowImage from "../assets/images/weather/snow.jpg";
-import rainImage from "../assets/images/weather/rain.jpg";
-import fogImage from "../assets/images/weather/misty.jpg";
-import hazeImage from "../assets/images/weather/haze.jpeg";
-import mistImage from "../assets/images/weather/misty.jpg";
-import smokeImage from "../assets/images/weather/smoke.jpeg";
-import clearImage from "../assets/images/weather/default.jpg";
+import defaultWeatherImage from "../assets/images/weather/default.webp";
+import cloudsImage from "../assets/images/weather/clouds.webp";
+import drizzleImage from "../assets/images/weather/drizzle.webp";
+import snowImage from "../assets/images/weather/snow.webp";
+import rainImage from "../assets/images/weather/rain.webp";
+import fogImage from "../assets/images/weather/misty.webp";
+import hazeImage from "../assets/images/weather/haze.webp";
+import mistImage from "../assets/images/weather/misty.webp";
+import smokeImage from "../assets/images/weather/smoke.webp";
+import clearImage from "../assets/images/weather/default.webp";
 import thunderstormImage from "../assets/images/weather/thunderstorm.webp";
 
 export const colorPallete = {
