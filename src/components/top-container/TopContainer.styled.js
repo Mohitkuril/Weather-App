@@ -25,12 +25,13 @@ const SearchInput = styled.input`
     outline: none;
     transition: 0.5s;
     ${SearchForm}:hover & {
-    min-width: 14rem;
-    max-width: 20rem;
+    min-width: 20rem;
+    max-width: 30rem;
     border-radius: 10px;
     font-size: 25px;
     position: relative;
     transition: 0.6s;
+    overflow: hidden;
 };
 `;
 
@@ -42,6 +43,7 @@ const SearchButton = styled.button`
 
 const SearchIcon = styled.img`
     position: absolute;
+    z-index: 999;
     top: 50%;
     left: 50%;
     cursor: pointer;
@@ -50,7 +52,7 @@ const SearchIcon = styled.img`
     max-width: 1.5rem;
     opacity: 0.7;
     ${SearchForm}:hover &{
-        left: 82%;
+        left: 90%;
         transition: 0.5s;
 };
 `;

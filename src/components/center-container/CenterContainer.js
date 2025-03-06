@@ -4,6 +4,8 @@ import React from "react";
 import NotFound from "../../assets/images/not-found.png";
 
 const CenterContainer = ({ todayWeather, loading, noData }) => {
+
+console.log(todayWeather);
     return (
         <React.Fragment>
         {loading ?

@@ -8,8 +8,8 @@ import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
-  const [todayWeather, setTodayWeather] = useState({ name: "", country: "", temp: "", icon: "03d", weather: "", weatherDesc: "", feelsLike: "", humidity: "", wind: "", highest: "", lowest: "" });
-  const [searchedLocation, setSearchedLocation] = useState("Vilnius");
+  const [todayWeather, setTodayWeather] = useState({ name: "Hyderabad", country: "IN", temp: "", icon: "03d", weather: "", weatherDesc: "", feelsLike: "", humidity: "", wind: "", highest: "", lowest: "" });
+  const [searchedLocation, setSearchedLocation] = useState("Hyderabad");
   const [lat, setLat] = useState("");
   const [lon, setLon] = useState("");
   const [searchDone, setSearchDone] = useState(false);
@@ -53,7 +53,7 @@ function App() {
         setLon(data[0]?.lon);
         setSearchDone(true);
         setTodayWeather(prev => { return { ...prev, name: data[0]?.local_names?.en, country: data[0]?.country } })
-       
+console.log(data);
       }).catch((err) => {
         console.log(err.message);
       });
@@ -68,6 +68,7 @@ function App() {
         .then(data => {
           setTodayWeather({ ...todayWeather,  temp: Math.ceil(data?.main?.temp), icon: data.weather[0].icon, weather: data.weather[0].main.toLowerCase(), weatherDesc: data.weather[0].description, feelsLike: data.main.feels_like, humidity: data.main.humidity, wind: data.wind.speed, highest: data.main.temp_max, lowest: data.main.temp_min });
           setLoading(false);
+          console.log(data, "data");
         }).catch((err) => {
           setLoading(false);
           setNoData(true);
